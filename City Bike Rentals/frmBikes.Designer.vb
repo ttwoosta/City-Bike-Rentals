@@ -62,7 +62,7 @@ Partial Class frmBikes
         '
         Me.lblCostHeading.AutoSize = True
         Me.lblCostHeading.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCostHeading.Location = New System.Drawing.Point(86, 66)
+        Me.lblCostHeading.Location = New System.Drawing.Point(100, 66)
         Me.lblCostHeading.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCostHeading.Name = "lblCostHeading"
         Me.lblCostHeading.Size = New System.Drawing.Size(209, 20)
