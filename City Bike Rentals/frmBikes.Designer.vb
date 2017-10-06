@@ -37,10 +37,12 @@ Partial Class frmBikes
         '
         'picBikes
         '
+        Me.picBikes.Image = Global.City_Bike_Rentals.My.Resources.Resources.Bikes
         Me.picBikes.Location = New System.Drawing.Point(1, 287)
         Me.picBikes.Margin = New System.Windows.Forms.Padding(2)
         Me.picBikes.Name = "picBikes"
         Me.picBikes.Size = New System.Drawing.Size(407, 175)
+        Me.picBikes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBikes.TabIndex = 0
         Me.picBikes.TabStop = False
         '
@@ -48,6 +50,7 @@ Partial Class frmBikes
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblHeading.Location = New System.Drawing.Point(85, 30)
         Me.lblHeading.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblHeading.Name = "lblHeading"
@@ -112,6 +115,7 @@ Partial Class frmBikes
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.ForeColor = System.Drawing.Color.RoyalBlue
         Me.btnCalculate.Location = New System.Drawing.Point(38, 219)
         Me.btnCalculate.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCalculate.Name = "btnCalculate"
@@ -122,7 +126,9 @@ Partial Class frmBikes
         '
         'btnClear
         '
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.RoyalBlue
         Me.btnClear.Location = New System.Drawing.Point(155, 219)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
@@ -134,6 +140,7 @@ Partial Class frmBikes
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.RoyalBlue
         Me.btnExit.Location = New System.Drawing.Point(272, 219)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnExit.Name = "btnExit"
@@ -144,8 +151,11 @@ Partial Class frmBikes
         '
         'frmBikes
         '
+        Me.AcceptButton = Me.btnCalculate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(409, 461)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
